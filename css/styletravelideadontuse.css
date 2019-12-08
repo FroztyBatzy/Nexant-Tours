@@ -1,0 +1,127 @@
+travelindex1 css
+
+  put before footer
+
+.themes-travel{
+  width: 100%;
+  text-align: center;
+  color: #2c2016;
+}
+
+.spacing-text{
+  font-family: 'Indie Flower', cursive;
+  font-size: 32px;
+  padding-bottom: 50px;
+  border-bottom: 2px #2c2016 solid;
+  box-shadow: 0 10px 10px -10px gray;
+  padding-top: 50px;
+}
+
+#spring-travel, #summer-travel, #fall-travel, #winter-travel{
+  border: 2px #2c2016 solid;
+  border-radius: 25px;
+  box-shadow: 15px 15px 8px 10px rgba(0, 0, 0, 0.1);
+}
+
+#spring-travel, #summer-travel, #fall-travel{
+  padding: 20px;
+  min-height: 475px;
+  margin: 75px auto 0 auto;
+  position: relative;
+  width: 85%;
+}
+
+#winter-travel{
+  padding: 20px;
+  min-height: 475px;
+  margin: 75px auto 0 auto;
+  position: relative;
+  width: 85%;
+}
+
+#spring-travel img, #fall-travel img{
+  height: 450px;
+  margin-left: 3%;
+  padding-top: 15px;
+  float: left;
+}
+
+#summer-travel img, #winter-travel img{
+  height: 450px;
+  margin-right: 3%;
+  padding-top: 15px;
+  float: right;
+}
+
+.travel-container1, .travel-container2{
+  font-size: 24px;
+}
+
+.travel-container1 h1{
+  position: absolute;
+  top: 50%;
+  left: 78%;
+  transform: translate(-50%, -50%);
+  font-family: 'Indie Flower', cursive;
+  white-space: nowrap;
+}
+
+.travel-container2 h1{
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  font-family: 'Indie Flower', cursive;
+}
+
+.travel-container1 a, .travel-container2 a{
+  text-decoration: none;
+}
+
+#travel-container-spring{
+  color: #85d46b;
+}
+
+#travel-container-summer{
+  color: #ffc107;
+}
+
+#travel-container-fall{
+  color: #706344;
+}
+
+#travel-container-winter{
+  color: #b3e3f4;
+}
+
+#travel-container-spring a{
+  color: #52b8ab;
+}
+
+#travel-container-summer a{
+  color: #00bcd4;
+}
+
+#travel-container-fall a{
+  color: #d84315;
+}
+
+#travel-container-winter a{
+  color: #020b36;
+}
+
+#travel-container-spring a:hover{
+  color: #85d46b;
+}
+
+#travel-container-summer a:hover{
+  color: #ffc107;
+}
+
+#travel-container-fall a:hover{
+  color: #706344;
+}
+
+#travel-container-winter a:hover{
+  color: #b3e3f4;
+}

@@ -1,0 +1,128 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: 'Montserrat', Arial;
+  background-color: #f6f6f6;  /* use pigments by abe33 on atom if you really want but slow */
+}
+
+.navbar{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  line-height: 75px;
+  border-bottom: 2px #3e2d1e solid;
+  padding: 5px 0;
+  background-color: #f6f6f6;
+}
+
+.navbar ul{
+  float: right;
+  margin-right: 3%;
+}
+
+.navbar li{
+  display: inline-block;
+  padding: 5px 20px 0 20px;
+  list-style: none;
+}
+
+.navbar a{
+  text-decoration: none;
+  font-size: 28px;
+  color: #3e2d1e;
+  transition: 0.2s;
+}
+
+.navbar img{
+  height: 50px;
+  width: 200px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 4%;
+  margin-top: 15px;
+}
+
+.navbar a:hover{
+  color: #b79470;
+}
+
+.navbar #active--page{
+  color: #b79470;
+}
+
+h1{
+  margin: 1em 0 2em 0;
+  text-align: center;
+  font-size: 32px;
+}
+
+.container{
+  width: 100%;
+  max-width: 1920px;
+  /* justify-content: space-between; */
+  text-align: center;
+  border-top: 1px solid #3e2d1e;
+  border-bottom: 1px solid #3e2d1e;
+  padding: 2em 0;
+}
+
+.container--box{
+  display: inline-block;
+  max-width: 30%;
+  height: auto;
+  overflow: hidden;
+  margin: 0 3%;
+}
+
+.container--box img{
+  max-height: 500px;
+  width: auto;
+}
+
+.container--box h2{
+  font-size: 24px;
+  margin: .5em 0;
+}
+
+.container--box p{
+  font-size: 18px;
+  margin: .25em 0;
+}
+
+.container--box i{
+  height: 2em;
+  width: 2em;
+  background-color: #f6f6f6;
+  color: #3e2d1e;
+}
+
+.invitation--container{
+  margin: 2em auto;
+  font-size: 32px;
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+  max-width: 60%;
+}
+
+.invitation--container a{
+  text-decoration: none;
+  color: #b79470;
+}
+
+.invitation--container a:hover{
+  color: #3e2d1e;
+}
+
+footer{
+  height: 76px;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 26px;
+  background-color: #2c2016;
+  color: white;
+  margin-top: 50px;
+  padding-top: 50px;
+}

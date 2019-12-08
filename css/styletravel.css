@@ -1,0 +1,384 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: 'Montserrat', Arial;
+  background-color: #f6f6f6;  /* use pigments by abe33 on atom if you really want but slow */
+}
+
+.navbar{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  line-height: 75px;
+  border-bottom: 2px #3e2d1e solid;
+  padding: 5px 0;
+  background-color: #f6f6f6;
+}
+
+.navbar ul{
+  float: right;
+  margin-right: 3%;
+}
+
+.navbar li{
+  display: inline-block;
+  padding: 5px 20px 0 20px;
+  list-style: none;
+}
+
+.navbar a{
+  text-decoration: none;
+  font-size: 28px;
+  color: #3e2d1e;
+  transition: 0.2s;
+}
+
+.navbar img{
+  height: 50px;
+  width: 200px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 4%;
+  margin-top: 15px;
+}
+
+.navbar a:hover{
+  color: #b79470;
+}
+
+.navbar #active--page{
+  color: #b79470;
+}
+
+/* .dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background-color: #f6f6f6;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  white-space: nowrap;
+}
+
+.dropdown-content a{
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+} */
+
+#push{
+  margin-top: 150px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  font-weight: 200;
+  font-size: 40px;
+  text-decoration: underline;
+}
+
+#push-div{
+  text-align: center;
+}
+
+#heading{
+  font-size: 32px;
+  margin-left: 3%;
+  padding: 100px 0 25px 0;
+  font-weight: 300;
+}
+
+.spring-container, .summer-container, .fall-container, .winter-container{
+  width: 100%;
+  height: 350px;
+  display: inline-block;
+  text-align: center;
+  padding: 25px 0 10px 0;
+  border-top: 2px #3e2d1e solid;
+  border-bottom: 2px #3e2d1e solid;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.spring-container{
+  background-image: url('https://source.unsplash.com/zkbqCBcDhko');
+}
+
+.summer-container{
+  background-image: url('https://source.unsplash.com/SYx3UCHZJlo');
+}
+
+.fall-container{
+  background-image: url('https://source.unsplash.com/Qy-CBKUg_X8');
+}
+
+.winter-container{
+  background-image: url('https://source.unsplash.com/KNUp-YBwBSE');
+}
+
+#spring-offer, #summer-offer, #fall-offer, #winter-offer{
+  width: 15%;
+  display: inline-block;
+  margin: 0 20px;
+  box-shadow: 15px 15px 10px #ccc;
+  padding: 25px 10px;
+  text-align: center;
+  background-color: #f6f6f6;
+}
+
+.spring-container img, .summer-container img, .fall-container img, .winter-container img{
+  width: 200px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.spring-container p, .summer-container p, .fall-container p, .winter-container p{
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+#spring-offer .order-btn{
+  background-color: #85d46b;
+}
+
+#summer-offer .order-btn{
+  background-color: #00bcd4;
+}
+
+#fall-offer .order-btn{
+  background-color: #d84315;
+}
+
+#winter-offer .order-btn{
+  background-color: #020b36;
+}
+
+.order-btn{
+  margin-top: 20px;
+  width: 90%;
+  border: none;
+  font-size: 16px;
+  padding: 10px 0;
+  color: white;
+}
+
+.order-btn:hover{
+  cursor: pointer;
+}
+
+#spring-offer .order-btn:hover{
+  background-color: #d4756b;
+}
+
+#summer-offer .order-btn:hover{
+  background-color: #ffc107;
+}
+
+#fall-offer .order-btn:hover{
+  background-color: #706344;
+}
+
+#winter-offer .order-btn:hover{
+  background-color: #509eba;
+}
+
+footer{
+  height: 76px;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 26px;
+  background-color: #2c2016;
+  color: white;
+  margin-top: 50px;
+  padding-top: 50px;
+}
+
+
+
+
+/* media queries */
+
+
+
+
+@media(max-width: 1300px){
+  .spring-container, .summer-container, .fall-container, .winter-container{
+    height: 250px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 15px 0 20px 0;
+  }
+
+  #spring-offer, #summer-offer, #fall-offer, #winter-offer{
+    width: 15%;
+    margin: 0 15px;
+    padding: 15px 5px;
+  }
+
+  #push{
+    font-size: 32px;
+  }
+
+  #heading{
+    font-size: 24px;
+  }
+
+  .spring-container img, .summer-container img, .fall-container img, .winter-container img{
+    width: 150px;
+    height: 115px;
+  }
+
+  .spring-container p, .summer-container p, .fall-container p, .winter-container p{
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  .order-btn{
+    width: 60%;
+  }
+}
+
+
+
+
+@media(max-width: 110px){
+  .spring-container, .summer-container, .fall-container, .winter-container{
+    height: 250px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 15px 0 20px 0;
+  }
+
+  #spring-offer, #summer-offer, #fall-offer, #winter-offer{
+    width: 15%;
+    margin: 0 15px;
+    padding: 15px 0 15px 5px;
+  }
+
+  #push{
+    font-size: 32px;
+  }
+
+  #heading{
+    font-size: 24px;
+  }
+
+  .spring-container img, .summer-container img, .fall-container img, .winter-container img{
+    width: 150px;
+    height: 115px;
+  }
+
+  .spring-container p, .summer-container p, .fall-container p, .winter-container p{
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  .order-btn{
+    width: 60%;
+  }
+}
+
+
+
+
+
+@media(max-width: 650px){
+  #spring-offer, #summer-offer, #fall-offer, #winter-offer{
+    width: 45%;
+  }
+
+  #push{
+    font-size: 24px;
+    margin-top: 100px;
+  }
+
+  #heading{
+    padding: 75px 0 25px 0;
+  }
+}
+
+
+
+
+
+@media(max-width: 520px){
+  .navbar{
+	  line-height: 30px;
+	  padding: 5px 0;
+	}
+
+	.navbar li{
+    padding: 8px 15px 0 15px;
+	}
+
+	.navbar a{
+	  font-size: 14px;
+	}
+
+	.navbar img{
+	  height: 20px;
+	  width: 80px;
+	  margin-bottom: 10px;
+	}
+}
+
+
+
+
+
+@media(max-width: 430px){
+  .navbar{
+	  line-height: 20px;
+	  padding: 5px 0;
+	}
+
+	.navbar li{
+	  padding: 10px 10px 0 10px;
+	}
+
+	.navbar a{
+	  font-size: 12px;
+	}
+
+	.navbar img{
+	  height: 15px;
+	  width: 60px;
+	  margin-bottom: 10px;
+    margin-left: 25px;
+	}
+
+  #spring-offer, #summer-offer, #fall-offer, #winter-offer{
+    width: 65%;
+  }
+
+  #push{
+    font-size: 16px;
+    margin-top: 75px;
+  }
+
+  hr{
+    width: 90%;
+  }
+
+  footer{
+	  height: 38px;
+	  font-size: 13px;
+	  margin-top: 25px;
+	  padding-top: 25px;
+	}
+}

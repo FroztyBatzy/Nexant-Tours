@@ -1,0 +1,138 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: 'Montserrat', Arial;
+  background-image: url('../img/backgroundnexant.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  height: calc(100vh - 85px);
+  width: 100%;
+}
+
+.navbar{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  line-height: 75px;
+  border-bottom: 2px #3e2d1e solid;
+  padding: 5px 0;
+  background-color: #f6f6f6;
+}
+
+.navbar ul{
+  float: right;
+  margin-right: 3%;
+}
+
+.navbar li{
+  display: inline-block;
+  padding: 5px 20px 0 20px;
+  list-style: none;
+}
+
+.navbar a{
+  text-decoration: none;
+  font-size: 28px;
+  color: #3e2d1e;
+  transition: 0.2s;
+}
+
+.navbar img{
+  height: 50px;
+  width: 200px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 4%;
+  margin-top: 15px;
+}
+
+.navbar a:hover{
+  color: #b79470;
+}
+
+.navbar #active--page{
+  color: #b79470;
+}
+
+#push{
+  margin-top: 150px;
+  width: 100%;
+}
+
+#goofy-text{
+  font-family: 'Indie Flower', cursive;
+  font-size: 28px;
+}
+
+.login--container{
+  float: left;
+  width: 39.9%;
+  margin-left: 5%;
+  padding-right: 5%;
+}
+
+.signup--container{
+  float: right;
+  width: 40%;
+  margin-right: 5%;
+  padding-left: 5%;
+  border-left: 1px #f6f6f6 solid;
+}
+
+.login--container h1, .signup--container h1{
+  margin-bottom: .5em;
+  font-size: 32px;
+}
+
+.login--container, .signup--container{
+  height: 65%;
+  padding-top: 10vh;
+}
+
+.login--container input, .signup--container input{
+  width: 30em;
+  display: block;
+  padding: .5em 0;
+  padding-left: 1em;
+  margin-top: 1em;
+  border: .5px #3e2d1e solid;
+  border-radius: 5px;
+}
+
+button{
+  border: none;
+  background-color: #f6f6f6;
+  color: #3e2d1e;
+  padding: .5em 3em;
+  margin: 2em 0;
+}
+
+button:hover{
+  background-color: #b79470;
+  color: #fff;
+  cursor: pointer;
+}
+
+.clear{
+  clear: both;
+  height: 2em;
+}
+
+footer{
+  /* position: absolute;
+  bottom: 0;
+  left: 0; */
+  height: 76px;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 26px;
+  background-color: #2c2016;
+  color: white;
+  margin-top: 50px;
+  padding-top: 50px;
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /dummy/
+
+Sitemap: http://nexanttours.000webhostapp.com/sitemap.xml

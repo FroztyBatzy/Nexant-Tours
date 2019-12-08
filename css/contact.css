@@ -1,0 +1,329 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: 'Montserrat', Arial;
+  height: 100vh;
+  background-color: #f6f6f6;  /* use pigments by abe33 on atom if you really want but slow */
+}
+
+.navbar{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  line-height: 75px;
+  border-bottom: 2px #3e2d1e solid;
+  padding: 5px 0;
+  background-color: #f6f6f6;
+}
+
+.navbar ul{
+  float: right;
+  margin-right: 3%;
+}
+
+.navbar li{
+  display: inline-block;
+  padding: 5px 20px 0 20px;
+  list-style: none;
+}
+
+.navbar a{
+  text-decoration: none;
+  font-size: 28px;
+  color: #3e2d1e;
+  transition: 0.2s;
+}
+
+.navbar img{
+  height: 50px;
+  width: 200px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 4%;
+  margin-top: 15px;
+}
+
+.navbar a:hover{
+  color: #b79470;
+}
+
+.navbar #active--page{
+  color: #b79470;
+}
+
+.contact-info{
+  margin-top: 150px;
+  width: 100%;
+  display: inline-block;
+}
+
+#text{
+  float: left;
+  margin-left: 5%;
+  width: 45%;
+  font-size: 28px;
+}
+
+p .fab{
+  margin-left: .5em;
+  color: #fff;
+  /* height: 40px;
+  width: 40px; */
+}
+
+p .fa-facebook-f{
+  background-color: #3b5998;
+  padding: 5px 10px;
+}
+
+p .fa-twitter{
+  background-color: #1da1f2;
+  padding: 5px;
+}
+
+p .fa-instagram{
+  background: #d6249f radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #8928eb 90%);
+  padding: 5px 7px;
+  border-radius: 10%;
+}
+
+.newsletter{
+  margin-top: 1em;
+}
+
+.newsletter input{
+  display: block;
+  margin: 1em 0;
+  height: 2em;
+  border: 1px solid #3e2d1e;
+}
+
+.newsletter input[type=text]{
+  width: 70%;
+  padding-left: .5em;
+  font-size: 16px;
+}
+
+.newsletter input[type=button]{
+  height: 3em;
+  width: 10em;
+  font-size: 16px;
+  background-color: #3e2d1e;
+  color: #fff;
+}
+
+.newsletter input[type=button]:hover{
+  border-color: #b79470;
+  background-color: #b79470;
+  cursor: pointer;
+}
+
+#goofy-text{
+  font-size: 24px;
+  font-family: 'Indie Flower', cursive;
+  margin-bottom: 25px;
+  display: none;
+}
+
+#map{
+  width:600px;
+  height:500px;
+  border: 1px #3e2d1e solid;
+  overflow: hidden;
+  float: right;
+  margin-right: 5%;
+}
+
+footer{
+  height: 76px;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 26px;
+  background-color: #2c2016;
+  color: white;
+  margin-top: 50px;
+  padding-top: 50px;
+}
+
+
+
+/* media queries */
+
+
+
+
+
+@media(max-width: 1400px){
+
+  .contact-info{
+    display: block;
+    text-align: center;
+  }
+
+  #text{
+    float: none;
+    margin: 35px auto 45px auto;
+    width: 100%;
+    font-size: 24px;
+  }
+
+  #goofy-text{
+    display: block;
+  }
+
+  #map{
+    width:70%;
+    height:400px;
+    margin-right: 0;
+    float: none;
+  }
+}
+
+
+
+
+@media(max-width: 800px){
+  .navbar{
+	  position: static;
+	  line-height: 75px;
+	  padding: 5px 0;
+	}
+
+	.navbar li{
+	  padding: 0 5px;
+	  padding-top: 0px;
+	}
+
+	.navbar a{
+	  font-size: 24px;
+	}
+
+	.navbar img{
+	  height: 40px;
+	  width: 150px;
+    margin-top: 20px;
+	  margin-bottom: 10px;
+	}
+
+  .contact-info{
+    margin-top: 75px;
+  }
+
+  #map{
+    height: 300px;
+  }
+
+  footer{
+	  height: 60px;
+	  font-size: 18px;
+	  margin-top: 25px;
+	  padding-top: 35px;
+	}
+}
+
+
+
+
+@media(max-width: 600px){
+  .navbar{
+	  line-height: 50px;
+	  padding: 5px 0;
+	}
+
+	.navbar li{
+	  padding-top: 5px;
+	}
+
+	.navbar a{
+	  font-size: 20px;
+	}
+
+	.navbar img{
+    margin-top: 10px;
+	}
+
+  .contact-info{
+    margin-top: 75px;
+    font-size: 22px;
+  }
+
+  #goofy-text{
+    margin: 0 15px 25px 15px;
+  }
+
+  #map{
+    height: 250px;
+  }
+
+  footer{
+	  height: 38px;
+	  font-size: 13px;
+	  margin-top: 25px;
+	  padding-top: 25px;
+	}
+}
+
+
+
+
+
+@media(max-width: 500px){
+  .navbar{
+	  line-height: 40px;
+	  padding: 5px 0;
+	}
+
+	.navbar li{
+	  padding: 0 5px;
+	}
+
+	.navbar a{
+	  font-size: 14px;
+	}
+
+	.navbar img{
+    margin-top: 10px;
+    width: 100px;
+    height: 25px;
+	}
+
+  .contact-info{
+    margin-top: 50px;
+  }
+
+  #text{
+    font-size: 18px;
+  }
+}
+
+
+
+
+
+@media(max-width: 350px){
+  .navbar{
+	  line-height: 30px;
+	  padding: 5px 0;
+	}
+
+	.navbar li{
+	  padding: 5px 3px;
+	}
+
+	.navbar a{
+	  font-size: 12px;
+	}
+
+	.navbar img{
+    margin-top: 10px;
+    width: 100px;
+    height: 25px;
+	}
+
+  #text{
+    font-size: 14px;
+  }
+}
